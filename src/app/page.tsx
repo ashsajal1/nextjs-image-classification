@@ -96,7 +96,7 @@ export default function Home() {
         <div className="border rounded w-full p-6">
           {result ? (
             result.map((r: any) => (
-              <p>{r.label} | {r.score}</p>
+              <p key={r.score}>{r.label} | {r.score}</p>
             ))
           ) : (
             <p>No result available</p>
