@@ -3,7 +3,7 @@ import fs from "fs";
 
 export async function POST(req: NextRequest) {
   const { filename } = await req.json();
-  async function query(filename : string) {
+  async function query(filename: string) {
     const data = fs.readFileSync(filename);
     const response = await fetch(
       "https://api-inference.huggingface.co/models/google/vit-base-patch16-224",
@@ -17,7 +17,8 @@ export async function POST(req: NextRequest) {
     return result;
   }
 
-  query("cats.jpg").then((response) => {
-    console.log(JSON.stringify(response));
+  const result = await query("cats.jpg");
+  Response.json({
+    result,
   });
 }
