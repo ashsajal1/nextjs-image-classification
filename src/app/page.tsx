@@ -1,4 +1,5 @@
 'use client';
+import ProgressBar from "@/components/ProgressBar";
 import { useState } from "react";
 
 export default function Home() {
@@ -111,6 +112,8 @@ export default function Home() {
           {error}
         </div>
       )}
+
+      <ProgressBar progress={12} label={`${12}`} />
 
     </main>
   );
