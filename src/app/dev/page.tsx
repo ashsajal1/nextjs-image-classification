@@ -12,7 +12,7 @@ export default function DevPage() {
             <div className="p-1 my-2">
                 <h1 className="text-lg font-bold text-center">Ashfiquzzaman Sajal</h1>
 
-                <p className="text-center text-sm text-gray-600">I'am a web developer. I'm familar with Javascript, Python.</p>
+                <p className="text-center text-sm text-gray-600">I&apos;am a web developer. I&apos;m familar with Javascript, Python.</p>
 
                 <div>
                     <h4 className="font-medium text-center m-4 border border-blue-700 p-1 text-blue-700 rounded">Contact me</h4>
