@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Navbar() {
     return (
-        <nav className='flex items-center justify-between p-3 md:p-4 bg-blue-700'>
+        <nav className='flex items-center justify-between p-3 bg-blue-700'>
             <div className='text-lg font-bold text-slate-50'>AITextClassify</div>
             <div className='flex items-center justify-between gap-2'>
                 <Link className='p-2 rounded border hover:bg-slate-50 flex items-center justify-center gap-1 text-sm text-slate-50 hover:text-gray-600 transition duration-200' href={'https://github.com/ashsajal1/nextjs-image-classification'} target='_blink' >
