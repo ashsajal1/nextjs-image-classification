@@ -36,10 +36,12 @@ export default function Home() {
           // console.log("Photo uploaded successfully");
         } else {
           // console.log("Failed to upload photo");
+          setLoading(false)
           setError("Failed to upload photo")
         }
       } catch (error) {
         // console.log("An error occurred:", error);
+        setLoading(false)
         setError("An error occurred.")
       }
     }
