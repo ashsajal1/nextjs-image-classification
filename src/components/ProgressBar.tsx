@@ -21,7 +21,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ progress, label }) => {
           </div>
         </div>
         <div>
-          {label}%
+          {parseFloat(label).toFixed(2)}%
         </div>
       </div>
 
