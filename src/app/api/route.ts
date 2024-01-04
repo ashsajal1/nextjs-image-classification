@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
     // console.log(image?.name);
 
     if (!image) {
-      console.log("no image found");
+      // console.log("no image found");
       return NextResponse.json(
         {
           ok: false,
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
       result,
     });
   } catch (error) {
-    console.log("first");
+    // console.log("first");
     return NextResponse.json(
       {
         ok: false,
