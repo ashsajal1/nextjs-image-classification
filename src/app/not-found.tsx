@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 export default function NotFound() {
     return (
         <div className='flex items-center justify-center p-12 flex-col gap-6'>
-            <img className='h-[400px] w-[400px]' src="/not-found.jpg" alt="not found image" />
+            <Image width={400} height={400} src="/not-found.jpg" alt="not found image" />
             <h1 className='font-bold text-xl'>Invalid route.</h1>
             <div className='w-[200px]'>
                 <Link className='p-2 rounded border bg-blue-700 hover:bg-slate-50 flex items-center justify-center gap-1 text-sm text-slate-50 hover:text-gray-600 transition duration-200' href={'/'}>
